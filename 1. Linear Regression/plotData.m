@@ -1,4 +1,4 @@
-function plotData(x, y)
+function plotData(X, y)
 %PLOTDATA Plots the data points x and y into a new figure 
 %   PLOTDATA(x,y) plots the data points and gives the figure axes labels of
 %   population and profit.
@@ -15,10 +15,6 @@ figure; % open a new figure window
 % Hint: You can use the 'rx' option with plot to have the markers
 %       appear as red crosses. Furthermore, you can make the
 %       markers larger by using plot(..., 'rx', 'MarkerSize', 10);
-data = load('ex1data1.txt');
-X = data(:,1); %population
-y = data(:,2); %profit of food truck
-m = length(y);
 
 plot(X,y, 'rx', 'MarkerSize',10)
 xlabel('Population of the city in 10,000s');
